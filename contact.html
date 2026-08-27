@@ -75,12 +75,28 @@
         margin: 0 auto;
         width: 100%;
         max-width: 300px;
-        height: 60px; 
-        
+        height: 60px;      
         box-sizing: border-box;
         padding: 8px 12px;
         border-radius: 8px;
         resize: vertical;
+    }
+
+    select#subject {
+        display: block;
+        margin: 0 auto 15px auto; 
+        width: 100%;
+        max-width: 200px;       
+        padding: 6px 10px; 
+        font-size: 0.9rem;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    label[for="subject"] {
+        display: block;
+        text-align: center;
+        margin-bottom: 6px;
     }
     </style>
     </head>
@@ -112,6 +128,14 @@
       <input type="email" id="em" name="em" required>
     </p>
   </fieldset>
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject" required>
+        <option value="" disabled selected>-- Choose Subject --</option>
+        <option value="suggestion">Product Status</option>
+        <option value="recommendation">Delivery Method</option>
+        <option value="feedback">General Inquiry</option>
+  </select>
 
   <p>
     <label for="msg">Feedback/Message</label><br>
