@@ -44,6 +44,44 @@
         text-align: center;
     }
 
+    fieldset {
+        max-width: 420px;
+        margin: 20px auto;
+        padding: 20px 25px;
+        border: 2px dashed #ffffff; 
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    legend {
+        margin: 0 auto;
+        padding: 0 12px;
+        color: #000000;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    input, select, textarea {
+        display: block;
+        width: 90%;
+        margin: 6px auto 14px auto;
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: 1px solid #ffffff;
+    }
+
+    textarea {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 300px;
+        height: 60px; 
+        
+        box-sizing: border-box;
+        padding: 8px 12px;
+        border-radius: 8px;
+        resize: vertical;
+    }
     </style>
     </head>
 
@@ -62,7 +100,31 @@
         </h2>
     </article>
 
+    <form id="demo">
+  <fieldset>
+    <legend>Drop your details below!</legend>
+    <p>
+      <label for="nm">Name</label><br>
+      <input type="text" id="nm" name="nm" required>
+    </p>
+    <p>
+      <label for="em">Email</label><br>
+      <input type="email" id="em" name="em" required>
+    </p>
+  </fieldset>
 
+  <p>
+    <label for="msg">Feedback/Message</label><br>
+    <textarea id="msg" name="msg" rows="3" required></textarea>
+  </p>
+
+    <div class="button-container">
+        <button type="submit">Send message</button>
+    </div>
+
+
+</form>
+<p id="log"></p>
 </html>
 <footer>
     <p>&copy; 2023 Astral Express. All rights reserved.</p>
