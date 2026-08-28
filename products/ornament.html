@@ -51,6 +51,33 @@
             text-align: center;
         }
 
+        fieldset {
+            padding: 20px 25px;
+            border: 2px dashed #526b7c; 
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            max-width: 420px;
+            margin: 20px auto;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 10;
+            margin-bottom: 10px;
+        }
+
+        #quantity,
+        input[type="number"] {
+            margin-bottom: 15px;
+            display: inline-block;
+
+        }
+
+        button[type="submit"] {
+            margin-top: 15px;
+            padding: 8px 20px;
+        }
     </style>
 
     <main>
@@ -79,6 +106,60 @@
             </tbody>
         </table>
     </main>
+
+        
+    <form action="#" method="POST" class="enquiry-form">
+    <h2>Order Enquiry</h2>
+
+    
+    <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+    </div>
+
+    
+    <fieldset>
+        <legend>Delivery Method</legend>
+        
+        <label>
+            <input type="radio" name="delivery" value="standard" checked> Cash On Delivery
+        </label>
+       
+        <label>
+            <input type="radio" name="delivery" value="express"> Standard Shipping
+        </label>
+        
+        <label>
+            <input type="radio" name="delivery" value="pickup"> Store Pickup
+        </label>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Optional Extras</legend>
+        
+        <label>
+            <input type="checkbox" name="extras" value="gift-wrap"> Gift Wrapping
+        </label>
+
+        <label>
+            <input type="checkbox" name="extras" value="warranty"> Extended Warranty
+        </label>
+    </fieldset>
+
+    <div class="form-group">
+        <label for="email">Contact Email:</label>
+        <input type="email" id="email" name="email" required placeholder="yourname@email.com">
+    </div>
+
+    <button type="submit">Send Enquiry</button>
+    </form>
+
+
+
+
+
+
 </body>
 </html>
 <footer>
