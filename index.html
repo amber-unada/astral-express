@@ -1,87 +1,82 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Astral Express</title>
+        
+        <link rel="stylesheet" href="../style.css">
+    </head>
     <main>
         <header>
-            <h1 style="font-family: Bebas Neue, sans-serif; text-align: center;">Astral Express</h1>
+            <h1>Astral Express</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" style="font-family: Bebas Neue, sans-serif; text-align: center;">Home</a></li>
-                    <li><a href="about.html" style="font-family: Bebas Neue, sans-serif; text-align: center;">About</a></li>
-                    <li><a href="contact.html" style="font-family: Bebas Neue, sans-serif; text-align: center;">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <link rel="stylesheet" href="style.css">
                 </ul>
             </nav>
         </header>
     </main>
 
     <style>
-    div {
-    display: flex;
-    justify-content: center;
-    }
+        div {
+            display: flex;
+            justify-content: center;
+        }
 
-    nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;     
-    }
+        footer {
+             padding: 40px 20px;
+        }
 
-    nav ul {
-    display: flex;      
-    list-style: none;       
-    padding: 0;
-    margin: 0;
-    gap: 20px;              
-    }
+        .details {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-    footer {
-    padding: 40px 20px;
-    }
-
-    .details {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    p {
-        text-align: center;
-    }
+        p {
+          text-align: center;
+        }
     </style>
-    </head>
+    
 
     <p style="text-align: center;">Welcome to the Astral Express! Wherein you will embark on a journey through the cosmos with the use of handy crafted items, made with love!</p>
-
     <body style="background-color: #9370db;"></body>
 
-    <article>
-        <h3 style="text-align: center;">Nebula Ornament, by set.</h3>
-        <p style="text-align: center;">P150</p>
-        <p style="text-align: center;">A beautiful ornament inspired by the vibrant colors of distant nebulae.</p>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: center; font-size: large; font-weight: bold; padding: 10px;">Check out our products!</h2>
 
-        <div>
-            <img src="galaxy_ornament.jpg" alt="nebula ornament to keep you track of the universe." width="300px" height="300px">
-        </div>
+        <main>
+            <div class="product-list">
+            
+                <div class="product-card">
+                    <h3 class="product-title" style="text-align: center;">Nebula Ornament, by set.</h3>
+                    <p class="product-price" style="text-align: center;">P150</p>
+                    <p class="product-description" style="text-align: center;">A beautiful ornament inspired by the vibrant colors of distant nebulae.</p>
+                    <img class="product-image" src="galaxy_ornament.jpg" alt="nebula ornament to keep you track of the universe." width="300px" height="300px">
+                
+                    <p class="details link">
+                        <a href="products/ornament.html" style="text-align: center;">View details</a>
+                    </p>
+                </div>
+                
+                <div class="product-card">
+                    <h3 class="product-title" style="text-align: center;">Luna CD</h3>
+                    <p class="product-price" style="text-align: center;">P200</p>
+                    <p class="product-description" style="text-align: center;">A collection of songs inspired by the moon and its mysteries. This CD is handcrafted with care, with music carefully picked for your comfort.</p>
+                    <img class="product-image" src="moon_cd.jpg" alt="celestial music to accompany your travels." width="300px" height="300px">
+                </div>
 
-        <p class="details link">
-            <a href="products/ornament.html" style="text-align: center;">View details</a>
-        </p>
-        
-        <h3 style="text-align: center;">Luna CD</h3>
-        <p style="text-align: center;">P200</p>
-        <p style="text-align: center;">A collection of songs inspired by the moon and its mysteries. This CD is handcrafted with care, with music carefully picked for your comfort.</p>
-
-        <div>
-            <img src="moon_cd.jpg" alt="celestial music to accompany your travels." width="300px" height="300px">
-        </div>
-
-        <h3 style="text-align: center;">Passage of Time</h3>
-        <p style="text-align: center;">P300</p>
-        <p style="text-align: center;">A timeless piece that captures the essence of cosmic evolution through an hourglass.</p>
-
-        <div>
-            <img src="galaxy_hourglass.jpg" alt="the hourglass to keep you sane." width="300px" height="300px">
-        </div>
-</article>
+                <div class="product-card">
+                    <h3 class="product-title" style="text-align: center;">Passage of Time</h3>
+                    <p class="product-price" style="text-align: center;">P300</p>
+                    <p class="product-description" style="text-align: center;">A timeless piece that captures the essence of cosmic evolution through an hourglass.</p>
+                    <img class="product-image" src="galaxy_hourglass.jpg" alt="the hourglass to keep you sane." width="300px" height="300px">
+                </div>
+            </div>
+        </main>
 </html>
+
 <footer>
      <p>&copy; 2023 Astral Express. All rights reserved.</p>
 </footer>
