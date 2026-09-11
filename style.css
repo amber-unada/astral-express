@@ -98,6 +98,7 @@ main {
   justify-content: center;
   gap: 1rem;
   text-align: center;
+  flex: 1 1 240px;
 }
 
 .product-info {
