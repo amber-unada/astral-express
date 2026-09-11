@@ -75,10 +75,11 @@ main {
   padding: 0 1rem;
 }
 
-.product-list {
+.product-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;            
+  flex-wrap: wrap;
+  gap: 24px;            
   max-width: 600px;
   margin: 0 auto;         
 }
@@ -93,6 +94,7 @@ main {
   max-width: 320px;
   display: flex; 
   flex-direction: column; 
+  flex: 1 1 240px;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
