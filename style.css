@@ -2,6 +2,7 @@
   --primary-color: #191970;
   --secondary-color: #7b68ee;
   --border-color: #6f298a;
+  --vibrant-color: #da70d6;
   --bg-color: #f8f9fa;
   --card-bg: #d8bfd8;
   --text-color: #212529;
@@ -24,13 +25,10 @@ body {
 
 header {
   background-color: var(--card-bg);
-  padding: 2rem 1rem;
+  border-bottom: 2px solid #191970;
+  box-shadow: 0 4px 15px #6f298a;
+  padding: 1rem 2.5rem;
   text-align: center;
-  border-bottom: 4px solid var(--border-color);
-  border-left: 4px solid var(--border-color);
-  border-right: 4px solid var(--border-color);
-  border-top: 4px solid var(--border-color);
-  border-radius: 24px;
 }
 
 header h1 {
@@ -53,7 +51,22 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--primary-color);
+  color: var(--vibrant-color);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.site-header nav li {
+  display: block;  
 }
 
 main {
@@ -270,4 +283,18 @@ td {
 
 tbody tr:last-child td {
   border-bottom: none;
+}
+
+.hero-banner {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;     
+  min-height: 125px !important;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-banner h2 {
+  font-size: 1.25rem;
+  gap: 0;
 }
