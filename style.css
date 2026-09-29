@@ -316,12 +316,13 @@ tbody tr:last-child td {
 
 .page {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "masthead masthead"
-    "side     main"
-    "foot     foot";
-  margin: 0 auto;
+    "masthead"
+    "main"
+    "side"
+    "foot";
+  gap: 16px;
 }
 
 header { 
@@ -368,3 +369,12 @@ aside ul li:hover {
   color: #6f298a;
 }
 
+@media (min-width: 700px) {
+  .page {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "masthead masthead"
+      "side     main"
+      "foot     foot";
+  }
+}
