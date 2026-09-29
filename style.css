@@ -101,6 +101,7 @@ main {
   flex: 1 1 240px;
 }
 
+
 .product-info {
   display: flex;
   flex-direction: column;
@@ -312,3 +313,58 @@ tbody tr:last-child td {
   font-size: 1.25rem;
   gap: 0;
 }
+
+.page {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-areas:
+    "masthead masthead"
+    "side     main"
+    "foot     foot";
+  margin: 0 auto;
+}
+
+header { 
+  grid-area: masthead; 
+}
+
+aside { 
+  grid-area: side;
+  align-self: stretch;
+  height: 100%;
+  margin: 0;
+  padding: 15px 10px;
+  background-color: #16122c;
+  border: 1px solid #191970;
+  box-shadow: 0 0 10px (#6f298a);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+main { 
+  grid-area: main; 
+}
+
+footer { 
+  grid-area: foot; 
+}
+
+aside h3 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #4a3b8c;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li:hover {
+  color: #6f298a;
+}
+
