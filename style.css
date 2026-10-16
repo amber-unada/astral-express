@@ -307,6 +307,7 @@ tbody tr:last-child td {
   min-height: 125px !important;
   text-align: center;
   padding: 1rem;
+  margin-bottom: 4px;
 }
 
 .hero-banner h2 {
@@ -377,4 +378,47 @@ aside ul li:hover {
       "side     main"
       "foot     foot";
   }
+}
+
+.product-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+
+  width: 600px;
+  padding: 20px;
+  background-color: #d8bfd8;
+  border: 2px solid #35216e;
+  border-radius: 15px;
+}
+
+.product-box img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-text h1 {
+  margin-top: 0;
+  display: block;
+}
+
+.product-text p {
+  line-height: 1.5;
+  display: block;
+}
+
+.shop-status {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.stock-status,
+.order-total,
+.shop-status {
+  margin: 4px 0;
+  color:#0d0b18;
 }
