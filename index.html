@@ -9,7 +9,7 @@
     </head>
     <main>
         <header class="site-header">
-            <h1>Astral Express</h1>
+            <h1 id="shopName">Astral Express</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -46,7 +46,10 @@
     </section>
 
     <p style="text-align: center;">Wherein you will embark on a journey through the cosmos with the use of handy crafted items, made with love!</p>
-    <body style="background-color: #9370db;"></body>
+    <body style="background-color: #9370db;">
+        
+        <script src="script.js" defer></script>
+    </body>
 
     <h2 style="font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: center; font-size: large; font-weight: bold; padding: 10px;">Check out our products!</h2>
 
@@ -110,5 +113,6 @@
     </div>
 </html>
 <footer>
-    <p>&copy; 2023 Astral Express. All rights reserved.</p>
+    <p id="copyRight"></p>
+    <p>Total Items: <span id="total-items">0</span> | Rating: <span id="avg-rating">0</span>/5</p>
 </footer>
